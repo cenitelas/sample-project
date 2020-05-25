@@ -1,0 +1,66 @@
+body{
+    background:grey;
+}
+#params{
+    display:flex;
+    height:40px;
+    width:auto;
+}
+
+#params .switch{
+    display:flex;
+    height:30px;
+    width:60px;
+    align-items:center;
+    background:grey;
+    border-radius:20px;
+    border:2px solid white;
+    transition: all 0.5s ease;
+}
+
+#params .switch .button{
+    height:25px;
+    width:25px;
+    background: #ffffff;
+    border-radius:30px;
+    box-shadow: 0px 0px 2px 1px black;
+    transform: translateX(17px);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#params .switch .button:hover{
+    box-shadow: 0px 0px 2px 1px grey;
+}
+
+#params input[value="1"] ~ .switch{
+    background:grey;
+}
+
+#params input[value="1"] ~ .switch .button{
+    transform: translateX(17px);
+}
+
+#params input[value="2"] ~ .switch{
+    border-color:red;
+}
+
+#params input[value="2"] ~ .switch .button{
+    transform: translateX(17px);
+}
+
+#params input[value="3"] ~ .switch{
+    background:green;
+}
+
+#params input[value="3"] ~ .switch .button{
+    transform: translateX(30px);
+}
+
+#params input[value="4"] ~ .switch{
+    background:black;
+}
+
+#params input[value="4"] ~ .switch .button{
+    transform: translateX(2px);
+}
